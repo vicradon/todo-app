@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./css/todo.css">
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <form id="todo-form">
+      <h1>Add todo</h1>
+      <label for="todo-title-input">Todo title</label>
+      <input required placeholder="wash clothes" id="todo-title-input" name="todo-title" type="text">
+
+      <label for="todo-description-input">Todo description</label>
+      <textarea required placeholder="wash clothes with the right amount of determination and willpower"
+        id="todo-description-input" name="todo-description"></textarea>
+      <button id="todo-form-submit-button">submit</button>
+    </form>
+
+    <h1 id="todos-title">Todos</h1>
+    <div class="filters">
+      <button class="all active-filter todo-filter">All</button>
+      <button class="done todo-filter">Done</button>
+      <button class="unDone todo-filter">Undone</button>
+    </div>
+    <div class="todos">
+      <p>Nothing to do</p>
+    </div>
+  </div>
+
+  <script src="./js/pubsub.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/todos.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
